@@ -10,4 +10,4 @@ app.use(express.static('./client/dist'))
 
 app.use('/cows', routes)
 
-app.listen(port, () => console.log(`Cows are listening on port ${port}!`))
+app.listen(port, () => console.log(`Cows are listening on port ${PORT}!`))
