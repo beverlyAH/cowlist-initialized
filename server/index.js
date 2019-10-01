@@ -1,9 +1,13 @@
 const express = require('express')
+const routes = require('./routes.js')
+const parser = require('body-parser')
+const db = require('../db/')
 const app = express()
 const port = 3000
 
+app.use(parser.json())
 app.use(express.static('./client/dist'))
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use('/cows', routes)
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Cows are listening on port ${port}!`))

@@ -1,0 +1,7 @@
+CREATE TABLE cows ( 
+	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY, 
+	name VARCHAR(50)  NOT NULL,
+  description VARCHAR(500) NOT NULL,
+  createdAt DATE,
+  updatedAt DATE
+);

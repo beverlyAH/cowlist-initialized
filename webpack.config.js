@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 const config = {
-  entry: './client/src/index.js',
+  entry: './client/src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'client/dist'),
     filename: 'bundle.js'
@@ -13,9 +13,18 @@ const config = {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules/
-      }
+      },
+      {
+        test: /\.css$/,
+        use: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader'
+        }],
+      },
     ]
   },
+  
   resolve: {
     extensions: [
       '.js',

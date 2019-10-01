@@ -1,0 +1,105 @@
+body {
+  background:
+      -moz-radial-gradient(white 15%, transparent 16%),
+      -moz-radial-gradient(white 15%, transparent 16%),
+      lightgreen;
+  background:
+      -webkit-radial-gradient(white 15%, transparent 16%),
+      -webkit-radial-gradient(white 15%, transparent 16%),
+      lightgreen;
+  background-position: 0 0, 40px 40px;
+  
+  -webkit-background-size:80px 80px;
+  -moz-background-size:80px 80px;
+  background-size:80px 80px;
+}
+
+h1 {
+  font-family: 'Mansalva', cursive;
+  margin: auto;
+  text-align: center;
+  font-size: 7rem
+}
+
+p {
+  font-family: 'Dosis', sans-serif
+}
+
+.description {
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.add {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: inline-flex
+}
+
+table {
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  padding: 2rem;
+  border: 0px;
+  border-radius: 10px;
+  margin: auto;
+  display: table
+}
+
+img {
+  width: 15rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.imgwrapper {
+  text-align: center;
+  margin: auto
+}
+
+input {
+  border: 0px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  width: 100%;
+  height: 2rem;
+}
+
+button {
+  border: 0px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  width: 100%;
+  height: 2rem;
+  font-weight: bold
+}
+
+input[type=text] {
+  text-align: center;
+  height: 2rem;
+  color: black;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+  text-align: center
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  text-align: center
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+  text-align: center
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+  text-align: center
+}
