@@ -3,7 +3,7 @@ const routes = require('./routes.js')
 const parser = require('body-parser')
 const db = require('../db/')
 const app = express()
-const port = 3000
+const PORT = process.env.PORT || 3000
 
 app.use(parser.json())
 app.use(express.static('./client/dist'))
