@@ -42,18 +42,21 @@ class Cows extends React.Component {
   }
 
   saveCow() {
-    axios.post('/cows', {
-      data: {
-        id: uuid(),
-        name: this.state.name,
-        description: this.state.description
-      }
-    })
-    .then(results => {
-      this.getCows()
-      this.clear()
-    })
-
+    if(this.state.name === '' || this.state.description === '') {
+      return
+    } else {
+      axios.post('/cows', {
+        data: {
+          id: uuid(),
+          name: this.state.name,
+          description: this.state.description
+        }
+      })
+      .then(results => {
+        this.getCows()
+        this.clear()
+      })
+    }
   }
 
   render() {
